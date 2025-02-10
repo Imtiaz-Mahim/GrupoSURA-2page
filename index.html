@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Negocios | Grupo Sura</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body class="font-sans text-primary">
+    <div class="w-full">
+        <!-- Header top -->
+        <header
+            class="flex justify-center bg-primary text-white px-1.5 md:px-7 lg:px-10 xl:px-16 py-1.5 lg:py-2.5 xl:py-3.5">
+            <div class="w-full mx-auto flex justify-center sm:justify-end items-center">
+                <nav>
+                    <ul class="flex space-x-6 text-xs md:text-sm lg:text-base">
+                        <li><a href="#">Línea Ética</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                        <li><a href="#">Noticias</a></li>
+                        <li><a href="#">Certificado de renta</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div class="bg-white p-2.5 md:p-0 md:opacity-0 md:h-0">
+            <svg class="bar w-6 fill-primary cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path
+                    d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+            </svg>
+        </div>
+
+        <!-- Mediam Device Overlay -->
+        <div
+            class="overlay -z-10 invisible h-screen w-screen md:w-0 opacity-0 transition-all duration-300 ease-in-out md:opacity-0 fixed top-0 left-0 bg-primary">
+        </div>
+
+        <!-- Header top / Main Header -->
+        <header
+            class="mainMenu transition-all duration-300 ease-in-out overflow-x-hidden md:overflow-x-visible w-0 font-semibold md:opacity-100 z-20 fixed md:static bg-white md:bg-transparent top-0 left-0 h-screen md:h-auto md:w-full flex flex-col md:flex-row justify-center text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class="flex justify-end p-3 md:p-0">
+                <svg class="xmark w-8 md:opacity-0 md:w-0 fill-primary cursor-pointer"
+                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                    <path
+                        d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z" />
+                </svg>
+            </div>
+            <div class="h-screen md:h-auto w-xs md:w-full px-4 md:px-7 lg:px-10 xl:px-16">
+                <ul
+                    class="w-full mx-auto flex flex-col md:flex-row justify-between md:items-center gap-1 md:gap-5 text-sm lg:text-base">
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="w-24 lg:w-32 xl:w-[156px]" src="./assets/images/logo.png" alt="GrupoSURA_Logo">
+                    </li>
+                    <li class="menuParent flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">¿Quienes somos?</a>
+                            <img class="w-3 ml-1.5 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                alt="down-arrow">
+                        </span>
+                        <ul
+                            class="dropDown px-2.5 z-40 hidden absolute top-10 left-0 w-60 overflow-hidden flex-col text-sm bg-white rounded-b-lg shadow-[2px_2px_5px_rgba(0,0,0,0.3)] transition-all duration-300 ease-in-out">
+                            <li
+                                class="flex justify-between items-center p-2 mt-4 mb-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Sobre Grupo SURA</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Nuestra Identidad</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Evolucion y Crecimiento</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 my-2.5 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">Talento Humano</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                            <li
+                                class="flex justify-between items-center p-2 mt-2.5 mb-4 rounded-lg hover:bg-primary hover:text-white hover:fill-white cursor-pointer transition-all duration-300 ease-in-out">
+                                <a href="#">#PensarConOtros</a>
+                                <svg class="w-2.5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="./nuestros.html">Gobierno Corporativo</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Portafolio</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Relación con inversionistas</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center relative">
+                        <span
+                            class="flex w-full md:w-auto justify-between md:justify-center rounded-3xl px-2.5 py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">
+                            <a href="#">Sostenibilidad</a>
+                        </span>
+                    </li>
+                    <li class="flex items-center px-2.5 md:px-0">
+                        <img class="cursor-pointer w-10 md:w-8 lg:w-10 xl:w-12" src="./assets/icons/search-box.svg"
+                            alt="Search">
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Header bottom / Breadcrumbs -->
+        <header class="flex justify-start bg-white text-primary shadow-[0_2px_4px_rgba(0,0,0,0.1)]">
+            <div class=" px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <div class="w-full mx-auto flex justify-between items-center">
+                    <div class="flex items-center">
+                        <nav>
+                            <ul class="flex space-x-6 py-1 lg:py-1.5 xl:py-2 text-xs md:text-sm">
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer">Home</a>
+                                    <img class="w-1.5 ml-1.5" src="./assets/icons/right-arrow.svg" alt="down-arrow">
+                                </li>
+                                <li class="flex items-center">
+                                    <a href="#"
+                                        class="rounded-3xl p-0.5 md:px-1.5 md:py-1 lg:px-2.5 lg:py-2 hover:bg-hover transition ease-in-out duration-300 cursor-pointer font-semibold">Relación
+                                        con el inversionista</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Main Contents -->
+
+
+        <!-- Slide In Pop Up -->
+        <main class="w-full flex justify-center text-white bg-popup">
+            <div
+                class="w-full justify-between items-center py-1 sm:py-2 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-semibold px-1.5 md:px-7 lg:px-10 xl:px-16 flex">
+                <div class="w-full flex justify-start items-center">
+                    <img class="w-10 mr-3" src="./assets/icons/Calendario_ok.svg" alt="Calendario_ok">
+                    <p>S1 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                        laudantium.</p>
+                </div>
+                <img class="w-5 self-start cursor-pointer" src="./assets/icons/Equis_linea.svg" alt="Equis_linea">
+            </div>
+        </main>
+
+        <!-- Display video and text overlay -->
+        <main class="w-full flex justify-center bg-tartiary">
+            <div class="relative top-0 left-0 w-full flex">
+                <!-- Text Section -->
+                <div
+                    class="w-[70%] z-10 h-full absolute bg-gradient-to-r from-primary via-primary to-transparent text-white px-1.5 md:px-7 lg:px-10 xl:px-16 flex flex-col justify-center">
+                    <div class="w-[60%] flex flex-col gap-2 sm:gap-5">
+                        <h2 class="text-base sm:text-2xl font-bold">H2 Lorem ipsum dolor sit amet</h2>
+                        <p class="text-sm">
+                            H3 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.
+                        </p>
+                        <button
+                            class="w-36 sm:w-40 flex justify-center items-center text-sm text-white bg-secondary mt-2 py-1.5 sm:py-2.5 rounded-3xl cursor-pointer">
+                            Leer más
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Video Section -->
+                <div class="w-full flex justify-end h-72 relative">
+                    <video autoplay loop muted class="w-[65%] h-full object-cover">
+                        <source src="./assets/videos/accions.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </main>
+
+        <!-- H2 Título de la sección -->
+        <main class="w-full flex lg:flex-row md:flex-col justify-start text-primary bg-white sm:py-8">
+            <div
+                class="md:relative w-full flex flex-col gap-2.5 md:gap-0 md:flex-row py-5 px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <div
+                    class="w-full md:w-[400px] md:h-[500px] bg-primary text-white p-2.5 sm:p-8 md:pr-24 rounded-lg md:rounded-r-lg">
+                    <h1 class="md:text-2xl lg:text-4xl font-bold mb-6">H2 Título de la sección</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore.</p>
+                </div>
+
+                <!-- floating cards -->
+                <div
+                    class="md:absolute md:pr-3 md:top-1/2 md:left-[350px] lg:left-[400px] md:-translate-y-1/2 text-primary flex flex-col m-auto sm:flex-row gap-4 justify-between">
+                    <!-- Card 1 -->
+                    <div class="max-w-80 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
+                        <div class="w-full h-44 overflow-hidden">
+                            <img class="w-full h-full object-cover rounded-t-xl" src="./assets/images/handshake.jpeg"
+                                alt="laughing-guy">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate.</h3>
+                            <button
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
+                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="max-w-80 bg-white rounded-xl shadow-[0_2px_4px_rgba(0,0,0,0.3)] flex-1 basis-1">
+                        <div class="w-full h-44 overflow-hidden">
+                            <img class="w-full h-full overflow-hidden object-cover rounded-t-xl"
+                                src="./assets/images/laughing-girl.jpeg" alt="laughing-guy">
+                        </div>
+                        <div class="p-3">
+                            <h3 class="text-base py-1.5 font-normal">Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate.</h3>
+                            <button
+                                class="flex justify-center items-center text-sm text-white bg-secondary px-10 mt-2 py-2 rounded-3xl cursor-pointer">CTA
+                                <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Tab, menu and table together -->
+        <main class="w-full flex justify-center bg-tartiary py-8">
+            <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <!-- Tabs -->
+                <ul
+                    class="w-full text-sm md:text-base lg:text-xl font-semibold sm:flex sm:justify-between grid grid-cols-2 gap-2 mb-6 text-primary">
+                    <li class="px-3 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center bg-primary text-white cursor-pointer">Acciones</span>
+                    </li>
+                    <li class="px-1 flex-1 flex justify-center basis-1/4 sm:border-r sm:border-secondary">
+                        <span
+                            class=" rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Informes</span>
+                    </li>
+                    <li class="px-1 flex-1 flex justify-center basis-1/4 border-r border-secondary">
+                        <span
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Inforelevantes</span>
+                    </li>
+                    <li class="flex-1 flex justify-center basis-1/4">
+                        <span
+                            class="rounded-lg w-full py-0.5 sm:py-2 flex justify-center items-center cursor-pointer">Asamblea</span>
+                    </li>
+                </ul>
+
+
+                <!-- Menu and Content -->
+                <div class="menu&content overflow-y-hidden">
+                    <div class="p-2 flex gap-5 min-w-[800px] sm:min-w-[1100px]">
+                        <!-- Menu -->
+                        <ul
+                            class="w-full min-w-44 flex-1 basis-1/5 sm:basis-1/3 flex flex-col rounded-lg p-1 sm:px-1.5 gap-6 justify-start bg-ex2">
+                            <li
+                                class="active w-full bg-white rounded-lg text-sm sm:text-base lg:text-xl font-semibold cursor-pointer">
+                                <span class="block p-0.5 sm:p-3 border-l-2 sm:border-l-4 border-primary ">Indicadores
+                                    Bursátiles</span>
+                            </li>
+                            <li
+                                class="w-full hover:bg-white rounded-lg text-sm sm:text-base lg:text-xl font-normal cursor-pointer">
+                                <span class="block p-0.5 sm:p-3">ADR- American Depositary Receipt</span>
+                            </li>
+                            <li class="tableMenu w-full relative">
+                                <h1
+                                    class="menuLabel w-full flex justify-between p-0.5 sm:p-3 hover:bg-white rounded-lg text-sm sm:text-base lg:text-xl font-normal mb-2 cursor-pointer">
+                                    <span class="font-bold text-xlblock">Dividendos</span>
+                                    <span class="flex items-center justify-center p-0.5 sm:p-3">
+                                        <img class="w-3 transition-all duration-300" src="./assets/icons/down-arrow.svg"
+                                            alt="down-arrow">
+                                    </span>
+                                </h1>
+                                <!-- Nested Menu -->
+                                <ul
+                                    class="dropDown text-sm sm:text-base lg:text-xl font-normal bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl overflow-x-hidden w-full flex flex-col gap-3 sm:gap-6 sm:px-6 p-1 sm:py-4 max-h-92 transition-all duration-300 ease-in-out">
+                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Acción Ordinaria
+                                    </li>
+                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Acción Preferencial
+                                    </li>
+                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Dividendos
+                                        Históricos</li>
+                                    <li class="hover:bg-tableBG px-3 py-2 rounded-xl cursor-pointer">Composición
+                                        accionaria</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <!-- Content -->
+                        <div
+                            class="content text-sm sm:text-base flex flex-col gap-5 text-tabletext bg-white shadow-[inset_0_0_8px_rgba(0,0,0,0.3)] rounded-xl p-5 flex-1 basis-2/3">
+                            <h1 class="text-primary font-bold text-lg sm:text-2xl">Indicadores Bursátiles</h1>
+                            <p class="sm:text-base">
+                                30 de junio de 2024
+                            </p>
+                            <div class="font-bold">
+                                <p>Tasa de cambio:<span class="ml-1.5 font-normal">COP 4,148</span></p>
+                                <p>Capitalización Bursátil (COP):<span class="ml-1.5 font-normal">12.8 billones</span>
+                                </p>
+                                <p>Valor Patrimonial por Acción (COP):<span class="ml-1.5 font-normal">61,947</span></p>
+                            </div>
+                            <!-- Table -->
+                            <div class="flex gap-4">
+                                <!-- Table 1 -->
+                                <ul
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:text-base">
+                                    <li
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-2">
+                                        ACCIÓN ORDINARIA</li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Acciones en circulación</p>
+                                        <p>319,830,883</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Precio de cierre (COP)</p>
+                                        <p>34,400</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>PVL (Precio/Valor en Libros)</p>
+                                        <p>0.8</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Valorización anual (YTD)</p>
+                                        <p>18.6%</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Precio máximo (COP)</p>
+                                        <p>36,300</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Precio mínimo (COP)</p>
+                                        <p>33,040</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Dividendo Anual (COP)</p>
+                                        <p>1,400</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white rounded-b-lg">
+                                        <p>Retorno del dividendo</p>
+                                        <p>4.07%</p>
+                                    </li>
+
+                                </ul>
+
+                                <!-- Table 2 -->
+                                <ul
+                                    class="min-w-[340px] max-h-[400px] overflow-x-hidden flex flex-col w-full rounded-lg border border-table sm:text-base">
+                                    <li
+                                        class="p-2.5 flex justify-center items-center rounded-t-lg font-bold bg-tartiary mb-2">
+                                        ACCIÓN PREFERENCIAL</li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Acciones en circulación</p>
+                                        <p>112,508,173</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Precio de cierre (COP)</p>
+                                        <p>24,420</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>PVL (Precio/Valor en Libros)</p>
+                                        <p>0.6</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Valorización anual (YTD)</p>
+                                        <p>80.9%</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Precio máximo (COP)</p>
+                                        <p>25,500</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white">
+                                        <p>Precio mínimo (COP)</p>
+                                        <p>24,020</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-tableBG">
+                                        <p>Dividendo Anual (COP)</p>
+                                        <p>1,400</p>
+                                    </li>
+                                    <li class="p-2 flex justify-between bg-white rounded-b-lg">
+                                        <p>Retorno del dividendo</p>
+                                        <p>5.73%</p>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Charts -->
+        <main class="w-full bg-white py-8">
+            <div class="px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 lg:mb-20">Precio de la Acción</h1>
+                <div class="h-100">
+                    <canvas style="background: #119fb9;" id="stockChart" height="400"></canvas>
+                </div>
+            </div>
+        </main>
+
+        <!-- También te puede interesar -->
+        <main class="w-full overflow-hidden bg-white text-primary flex justify-center py-1 sm:py-8">
+            <div class="py-5 px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <h1 class="font-bold text-lg sm:text-2xl lg:text-4xl mb-2.5 sm:mb-10 lg:mb-20">También te puede
+                    interesar</h1>
+                <div class="flex flex-col lg:flex-row justify-between gap-6">
+                    <!-- Card 1-->
+                    <div
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
+                        <h1 class="text-base sm:text-xl font-semibold mb-5">Resultados Trimestrales</h1>
+                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+                            dolores et quas molestias excepturi</p>
+                        <button
+                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                        </button>
+                    </div>
+                    <!-- Card 2-->
+                    <div
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
+                        <h1 class="text-xl font-semibold mb-5">Asamblea de Accionistas</h1>
+                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+                            dolores et quas molestias excepturi</p>
+                        <button
+                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                        </button>
+                    </div>
+                    <!-- Card 3-->
+                    <div
+                        class="flex flex-col justify-between shadow-[0_2px_4px_rgba(0,0,0,0.3)] rounded-lg flex-1 basis-1 p-6">
+                        <h1 class="text-xl font-semibold mb-5">Pago de Dividendos</h1>
+                        <p class="font-normal text-sm sm:text-base p-1">At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos
+                            dolores et quas molestias excepturi</p>
+                        <button
+                            class="self-end w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Eventos -->
+        <main class="w-full bg-tartiary text-primary flex justify-center py-8">
+            <div class="w-full px-1.5 md:px-7 lg:px-10 xl:px-16">
+                <h1 class="font-bold text-2xl lg:text-4xl mb-10 lg:mb-20">Eventos</h1>
+                <div
+                    class="flex flex-col sm:grid sm:grid-cols-2 sm:gap-y-6 md:flex md:flex-row justify-between gap-7 sm:gap-3">
+                    <!-- Card 1-->
+                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-3">
+                        <h1 class="text-xl font-semibold mb-5">Video conferencia presentación Informe 4T 2024</h1>
+                        <div class="flex justify-start gap-2.5">
+                            <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
+                            <div>
+                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                            </div>
+                        </div>
+                        <button
+                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                    </div>
+                    <!-- Card 2-->
+                    <div class="flex-1 basis-1 flex flex-col justify-between border-l-2 border-primary pl-3">
+                        <h1 class="text-xl font-semibold mb-5">Nombre del evento número 2</h1>
+                        <div class="flex justify-start gap-2.5">
+                            <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
+                            <div>
+                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                            </div>
+                        </div>
+                        <button
+                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                    </div>
+                    <!-- Card 3-->
+                    <div class="flex flex-col justify-between flex-1 basis-1 border-l-2 border-primary pl-3">
+                        <h1 class="text-xl font-semibold mb-5">Nombre del evento</h1>
+                        <div class="flex justify-start gap-2.5">
+                            <img class="w-10" src="./assets/icons/Calendario_fecha.svg" alt="Calendario_fecha">
+                            <div>
+                                <p class="font-normal text-base p-1">18 de Diciembre del 2024</p>
+                                <p class="font-normal text-base p-1">14:00 GTM</p>
+                            </div>
+                        </div>
+                        <button
+                            class="w-48 flex justify-center items-center text-sm mt-5 text-white bg-secondary px-10 py-3 rounded-3xl cursor-pointer">Call
+                            To Action
+                            <img class="ml-2 h-4" src="./assets/icons/line-arrow.svg" alt="line-arrow"></button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Inversionista -->
+        <main class="w-full overflow-hidden bg-white flex justify-center py-8 px-1.5 md:px-7 lg:px-10 xl:px-16">
+            <div class="flex flex-col lg:flex-row gap-4 bg-primary rounded-xl justify-between p-4">
+                <div class="p-4 flex flex-col gap-2 justify-center items-center flex-1 basis-1/3">
+                    <h1 class="text-secondary text-xl sm:text-4xl font-bold">Centro de atención al inversionista</h1>
+                    <p class="text-white text-base sm:text-xl font-normal">En caso que necesites información adicional a
+                        la que aquí se encuentra, puedes contactar a las siguientes personas:</p>
+                </div>
+
+                <!-- Cards -->
+                <div class="w-full text-primary flex-1 basis-2/3 flex flex-col sm:flex-row gap-4 justify-between">
+                    <!-- Card 1 -->
+                    <div class="bg-white rounded-xl flex-1 basis-1">
+                        <div class="w-full max-h-48 overflow-hidden">
+                            <img class="w-full h-full object-cover rounded-t-xl transform -scale-x-100"
+                                src="./assets/images/laughing-guy.jpeg" alt="laughing-guy">
+                        </div>
+                        <div class="p-3">
+                            <h2 class="text-xl py-1.5 font-semibold">Carlos Eduardo Gonzalez Tabares</h2>
+                            <h3 class="text-base py-1.5 font-normal">Gerente de Inversionistas y Mercado de Capitales
+                            </h3>
+                            <p class="text-sm py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a></p>
+                            <p class="text-sm py-1.5"><a
+                                    href="mailto:cegonzalezt@gruposura.com.co">cegonzalezt@gruposura.com.co</a></p>
+                            <p class="text-sm py-1.5">Carrera 43A # 5A - 113</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="bg-white rounded-xl flex-1 basis-1">
+                        <div class="w-full max-h-48 overflow-hidden">
+                            <img class="w-full h-full object-cover rounded-t-xl transform -scale-x-100"
+                                src="./assets/images/moody-guy.jpeg" alt="moody-guy-guy">
+                        </div>
+                        <div class="p-3">
+                            <h2 class="text-xl py-1.5 font-semibold">Daniel Mesa Gómez</h2>
+                            <h3 class="text-base py-1.5 font-normal">Director de Inversionistas y Mercado de Capitales
+                            </h3>
+                            <p class="text-sm py-1.5"><a href="tel:+576043197039">(+57) 604 319 7039</a></p>
+                            <p class="text-sm py-1.5"><a
+                                    href="mailto:cegonzalezt@gruposura.com.co">cegonzalezt@gruposura.com.co</a></p>
+                            <p class="text-sm py-1.5">Carrera 43A # 5A - 113</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer
+            class="w-full flex-col justify-center text-white text-base font-normal bg-primary px-1.5 md:px-7 lg:px-10 xl:px-16 py-8">
+            <div class="w-full mx-auto flex flex-col sm:flex-row justify-between">
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Ayudas e Información</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Suscríbete a nuestro Newslatter</a>
+                        </li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Preguntas Frecuentes</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Contacto</a></li>
+                        <li class="py-1 sm:py-3 flex gap-4">
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/X.svg" alt="X"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Linked-in.svg"
+                                    alt="Linked-in"></a>
+                            <a href="#"><img class="w-6 sm:w-8 lg:w-10" src="./assets/icons/Youtube.svg"
+                                    alt="Youtube"></a>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Enlaces de Interés</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Centro de Recursos</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Términos y Condiciones</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Certificado de Renta</a></li>
+                    </ul>
+                </div>
+                <div class="mb-3.5">
+                    <h4
+                        class="inline-block sm:block py-1.5 sm:py-3.5 border-b-2 border-white text-xs md:text-sm lg:text-base font-bold">
+                        Links de inversiones</h4>
+                    <ul class="text-xs lg:text-sm">
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en BVC</a></li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Listados en NYSE (ADR nivel 1)</a>
+                        </li>
+                        <li class="py-1 sm:py-3"><a href="#" class="hover:underline">Bolsa de Santiago</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mx-auto text-center py-10 text-xs md:text-sm font-normal">
+                <h1>© Copyright Grupo SURA 2025</h1>
+                <h2>Supervisados por <span class="text-foooter cursor-pointer">Superintendencia Financiera de
+                        Colombia</span></h2>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+        integrity="sha512-ZwR1/gSZM3ai6vCdI+LVF1zSq/5HznD3ZSTk7kajkaj4D292NLuduDCO1c/NT8Id+jE58KYLKT7hXnbtryGmMg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
